@@ -1,0 +1,45 @@
+body{
+	
+	background-color:#EEE;
+}
+
+#sideBar{
+	float:left;
+	background-color:rgb(0,167,217);
+	height:125%;
+	padding:10px;
+	margin-right:100px;
+	margin-left:10px;
+	text-align:center;
+	color:white;
+	width:20%;
+}
+#sideBar h1{
+	text-decoration:underline;
+}
+
+#sidebar a{
+	color:white;
+	text-decoration:none;
+}
+.displayPic{
+	width:55%;
+	padding-top:20px;
+	
+}
+#socialMedia{
+	border-top:5px solid White;
+	border-bottom:5px solid White;
+	padding-top:20px;
+	padding-bottom:20px;
+	margin-top:20px;
+	margin-bottom:20px;
+	text-align:left;
+	font-size:23px;
+}
+
+#socialMedia img{
+	width:15%;
+	
+	
+}
