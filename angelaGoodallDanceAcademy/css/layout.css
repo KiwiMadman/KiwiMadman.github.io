@@ -1,0 +1,144 @@
+header{
+width:1000px;
+margin-left:auto;
+margin-right:auto;
+text-align:center;
+}
+
+body{
+background-color:#000000;
+color:#FFFFFF;
+}
+
+a.header{
+font-size:36px;
+font-family:Trebuchet MS;
+color:#CD0074;
+}
+
+nav{
+font-size:30px;
+text-decoration:none;
+border-top:inset 5px #FFF;
+border-bottom:inset 5px #FFF;
+padding-top:10px;
+padding-bottom:10px;
+text-align:center;
+width:800px;
+margin-left:auto;
+margin-right:auto;
+background-color:#2a2a2a;
+}
+
+a{
+color:#CD0074;
+text-decoration:none;
+font-size:36px;
+}
+
+a.contact{
+font-size:15px;
+}
+
+img.photos{
+padding:10px;
+border:double 3px rgba(205, 0, 116,0.5) ;
+margin:5px;
+}
+
+
+
+h2{
+font-size:35px;
+color:#CD0074;
+}
+
+h3{
+font-size:22px;
+color:#CD0074;
+}
+
+h4{
+font-size:18px;
+}
+
+p{
+font-family:Avant Garde;
+font-size:15px;
+}
+
+p.nav{
+color:#FFFFFF;
+text-decoration:none;
+font-size:28px;
+}
+
+section{
+margin-top:30px;
+padding-bottom:30px;
+text-align:center;
+width:800px;
+
+margin-left:auto;
+margin-right:auto;
+background-color:#2a2a2a;
+border-top:inset 5px #FFF;
+border-bottom:inset 5px #FFF;
+}
+
+footer{
+text-align:center;
+width:800px;
+margin-left:auto;
+margin-right:auto;
+margin-top:auto;
+}
+
+/*Timetable specific*/
+.current{
+font-size:38px;
+text-decoration:underline;
+}
+
+td{
+width:145px;
+height:25px;
+padding:5px;
+font-size:22px;
+}
+
+#containerRight{
+width:500px;
+border:2px #FFF solid;
+float:right;
+margin-right:20px;
+height:325px;
+
+}
+
+#containerLeft{
+    list-style-type: none;
+	width:250px;
+	border:2px #FFF solid;
+	float:left;
+	text-align:left;
+	margin-left:20px;
+	height:325px;
+}
+
+section.timetablePage{
+margin-top:30px;
+text-align:center;
+width:800px;
+height:500px;
+margin-left:auto;
+margin-right:auto;
+background-color:#2a2a2a;
+border-top:inset 5px #FFF;
+border-bottom:inset 5px #FFF;
+}
+
+.noTable{
+font-size:25px;
+text-decoration:underline;
+}
