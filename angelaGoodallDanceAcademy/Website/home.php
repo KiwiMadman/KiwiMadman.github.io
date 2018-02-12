@@ -8,7 +8,11 @@
 
 	<a href="index.html" class="header"><img src="images/header3.jpg" /></a>
 </header>
-
+<!-- RETURN TO HAYDEN'S CV -->
+<a href="http://KiwiMadman.github.io/index.html">
+<div id="returnToCV">
+	<h4>To return to Hayden Alves' CV Website<br></h4>
+</div></a>
 <nav>
 	<p class="nav">
 		<a href="home.php">Home</a> | 
@@ -63,6 +67,7 @@ Junior Classes-$ 115.00 per term Rosette Pre Grade - Grade 3 (30 minute class)<b
 All other classes-$ 130.00 per term-Grade 4 - Advanced (45 minute class)<br>
  <br/></p>
 </section>
+
 
 <footer>
 	<p>Contact Us: <strong>021 174 3500</strong> or email us at 

@@ -8,7 +8,11 @@
 
 	<a href="index.html" class="header"><img src="images/header3.jpg" /></a>
 </header>
-
+<!-- RETURN TO HAYDEN'S CV -->
+<a href="http://KiwiMadman.github.io/index.html">
+<div id="returnToCV">
+	<h4>To return to Hayden Alves' CV Website<br></h4>
+</div></a>
 <nav>
 	<p class="nav">
 		<a href="home.php">Home</a> | 

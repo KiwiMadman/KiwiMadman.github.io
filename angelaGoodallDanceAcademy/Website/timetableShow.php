@@ -9,7 +9,11 @@
 </head>
 <body>
 <header>
-
+<!-- RETURN TO HAYDEN'S CV -->
+<a href="http://KiwiMadman.github.io/index.html">
+<div id="returnToCV">
+	<h4>To return to Hayden Alves' CV Website<br></h4>
+</div></a>
 	<h1><a href="index.html" class="header"><img src="images/header2.jpg" /></a> </h1>
 </header>
 
