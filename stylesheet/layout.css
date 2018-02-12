@@ -85,6 +85,11 @@ h5{font-family:Ubuntu;}
 	margin-bottom:35px;
 	box-shadow:5px 10px 50px #aaa;
 }
+#workExperience a{
+	color:black;
+	text-decoration:none;
+	
+}
 .organisationWE{
 	margin-bottom:-20px;
 }
