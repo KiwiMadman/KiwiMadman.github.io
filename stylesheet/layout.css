@@ -124,6 +124,7 @@ h5{font-family:Ubuntu;}
 	padding-bottom:10px;
 	margin-bottom:35px;
 	box-shadow:5px 10px 50px #aaaaaa;
+	height:30%;
 }
 
 
@@ -146,3 +147,42 @@ h5{font-family:Ubuntu;}
 	text-decoration:none;
 	font-size:30px;
 }
+
+.danceMedia{ 
+	margin-left:auto;
+	margin-right:auto;
+	background-color:rgba(0,167,217,0.3);
+	box-shadow:5px 10px 50px #aaa;
+	text-align:center;
+	width:50%;
+	margin-bottom:35px;
+	padding:40px;
+	}
+	
+	
+.danceMedia img{
+	width:40%;
+	padding:10px;
+}	
+
+#facebookHeader img {width:50%}
+#logo img { width:40%;}
+#flyers img {width:60%;}
+
+
+
+
+
+
+
+#returnToCV{
+	color:black;
+	width:300px;
+	height:100px;
+	background-color:rgba(0,167,217,0.3);
+	box-shadow:5px 10px 50px #aaa;
+	text-align:center;
+	float:left;
+	padding:10px;
+}
+
