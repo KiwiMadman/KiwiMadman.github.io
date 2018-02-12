@@ -10,6 +10,8 @@ h3{font-family:Ubuntu;}
 h4{font-family:Ubuntu;}
 h5{font-family:Ubuntu;}
 
+
+
 /*Side Bar Content Sections*/
 #sideBar{
 	float:left;
@@ -25,11 +27,12 @@ h5{font-family:Ubuntu;}
 	text-decoration:underline;
 	font-family:'Ubuntu';
 }
-
-#sidebar a{
-	color:white;
+.link{
 	text-decoration:none;
+	color:white;
+	
 }
+
 .displayPic{
 	width:55%;
 	padding-top:20px;

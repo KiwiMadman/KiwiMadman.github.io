@@ -24,9 +24,11 @@ h5{font-family:Ubuntu;}
 	font-family:'Ubuntu';
 }
 
-#sidebar a{
-	color:white;
+.link{
 	text-decoration:none;
+	color:white;
+	
+}
 }
 .displayPic{
 	width:25%;
