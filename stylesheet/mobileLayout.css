@@ -125,20 +125,20 @@ h5{font-family:Ubuntu;}
 	padding-bottom:10px;
 	margin-bottom:35px;
 	box-shadow:5px 10px 50px #aaaaaa;
-	height:275px;
+	height:900px;
 }
 .skillLogo{
 	width:150px;
-	padding-bottom:10px;
+	padding-bottom:30px;
+	padding-top:10px;
 }
-
 
 .IndividualSkill{
 	float:left;
 	text-align:center;
-	padding-left:25px;
-	padding-right:25px;
-	padding-bottom:10px;
-	width:10%;
+	padding-left:15px;
+	padding-right:15px;
+	padding-bottom:30px;
+	width:20%;
 	height:200px;
 }
