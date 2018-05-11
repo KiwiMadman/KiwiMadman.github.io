@@ -8,7 +8,8 @@
 		<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 		
 		<script>if (screen.width<=699){
-			document.location="mobile.html";
+			document.getElementById('mobileVersion').style.display="block";
+			document.getElementById('desktopVersion').style.display="none";
 		}</script>
 		
 		<meta name="description" content="A CV website for Hayden Alves a marketing and management student from the Victoria University of Wellington">
@@ -17,6 +18,7 @@
 	</head>
 
 	<body>
+<div id="desktopVersion"> 	
 		<div id="sideBar">
 		<img src="images/HEADSHOT.png" alt="Display Picture" class="displayPic" Title="Display Picture"/>
 		<h1>Hayden Alves</h1>
@@ -124,5 +126,141 @@
 		</div>
 		
 		</div>
+</div>
+	
+	
+	
+	<!--------------------------------------------------------------------->
+<div id="mobileVersion">
+		<div id="sideBarMOB">
+		<img src="images/HEADSHOT.png" alt="Display Picture" class="displayPic" width="25%"/>
+		<h1>Hayden Alves</h1>
+		<h2><a href="tel:0221366130" class="link">022 1366 130</a></h2>
+		<h2><a href="mailto:Hayden.Alves@gmail.com" class="link">Hayden.Alves@gmail.com</a></h2>
+		
+		<div id="socialMedia">
+			<a href="http://www.facebook.com/HaydenAlves" class="link"  title="Facebook Profile "><img src="images/FACEBOOK.png"  alt="Facebook logo and Profile Link"/> /HaydenAlves</a><br/>
+			<a href="http://www.instagram.com/ThisIsWhatIDidThisSummer" class="link" title="Instagram Profile"><img src="images/INSTAGRAM.png" alt="Instagram Logo and Profile Link" /> /ThisIsWhatIDidThisSummer</a><br/>
+			<a href="http://www.linkedin.com/in/HaydenAlves" class="link" title="LinkedIn Profile"><img src="images/LINKEDIN.png" alt="Linkedin Logo and Profile Link" /> /HaydenAlves</a><br/>
+		</div>
+		
+		<div id="references">
+		<h3>References</h3>
+		<p><strong>Sharon Ford</strong><br>
+		Manager<br>
+		Whitcoulls Johnsonville<br>
+		<a href="tel:048904210" class="link">04 890 4210</a><br>
+		<a href="mailto:JON@whitcoulls.co.nz" class="link">JON@whitcoulls.co.nz</a></p>
+		</div>
+		
+		<a href="files/HaydenAlvesCV.pdf" class="link" alt="a download link to a pdf of CV" title="CV Download"> CV Download</a>
+		</div>
+		<div id="mainContent">
+		<div id="personalStatement">
+			<h3>Personal Statement</h3>
+			<p> A marketing and management student at Victoria University of Wellington. Seeking a part
+				time position to help develop skills needed for entering into a successful marketing career.
+				Through my experience working in a retail environment I have obtained techniques that
+				help me be a hard working, conscientious worker and I wish to apply these techniques to a
+				new field. 
+			</p>
+		</div>
+		
+		<div id="workExperience">
+		<h3>Work Experience</h3>
+			<div>
+				<h4 class="organisationWE">Whitcoulls Johnsonville - Supervisor <span class="date">(2015 - 2018)<span></h4>
+				<ul>
+				<li>Managing small team of staff(2-3 people)</li>
+				<li>Resolve customer issues and complaints</li>
+				<li>Manage stock
+					<ul>
+						<li>Stocktaking</li>
+						<li>Recipt Stock</li>
+						<li>Internal transfering</li>
+					</ul>
+				</li>
+				<li> Opening and closing the store
+					<ul>
+						<li>Counting and preparing tills</li>
+						<li>Locking and unlocking store securely</li>
+					</ul></li>
+				</ul>
+			</div>
+			
+			<div>
+				<h4 class="organisationWE">Angela Goodall Dance Academy - Media Design <span class="date">(2015)</span></h4>
+				<ul>
+					<li>Designing HTML website</li>
+					<li> Design flyers, posters, newspaper advertisments, and facebook banner
+					<ul>
+						<li>Using Adobe Photoshop and Indesign</li>
+					</ul></li>
+				</ul>
+			</div>
+			
+			<div>
+				<h4 class="organisationWE">Whitcoulls Johnsonville - Sales Person <span class="date">(2013 - 2015)</span></h4>
+				<ul>
+					<li>Use of point of sale (advanced retail system)</li>
+					<li>Cash Handling</li>
+					<li>Stock search using a database</li>
+					<li>Personally selling specific products</li>
+					<li><ul> Implementing head office actions
+						<li>Price Changes</li>
+						<li>Product returns</li>
+						<li>Promotion set up and take down</li>
+						<li>Putting stock on shelves</li>
+					</ul></li>
+					<li>Cleaning</li>
+				</ul>
+			</div>
+		</div>
+		
+		
+		<div id="education">
+			<h3>Education</h3>
+			<p>
+			<h4 class="organisationEdu">Victoria University of Wellington <span class="date">(2016 - <span class="current">Current</span>)</span></h4>
+			Bachelor of Commerce- Marketing and Management<br>
+			
+			<h4 class="organisationEdu">Victoria University of Wellington <span class="date">(2015 - 2015)</span></h4>
+			Bachelor of Science - Chemistry<br>
+		
+			<h4 class="organisationEdu">Red Cross</h4>
+			First Aid Certificate <span class="date">(2013 - 2015)</span><br>
+			
+			<h4 class="organisationEdu">Onslow College <span class="date">(2010 - 2014)</span></h4>
+			NCEA Level 1,2,3<br>
+			</p>
+		</div> 
+		
+		<div id="skills">
+		<h3>Skills</h3>
+		<ul>
+			<div id="left" style=" float:left;">
+			<div class="IndividualSkill">Adobe Photoshop<br><img src="images/skills/photoshop.png" class="skillLogo"/></div>
+			<div class="IndividualSkill">Adobe Indesign<br><img src="images/skills/indesign.png" class="skillLogo"/></div>
+			<div class="IndividualSkill">Adobe Lightroom<br><img src="images/skills/lightroom.png" class="skillLogo"/></div>
+			<div class="IndividualSkill">Adobe Premiere<br><img src="images/skills/premiere.png" class="skillLogo"/></div>
+			<div class="IndividualSkill">Microsoft Word<br><br><img src="images/skills/word.png" class="skillLogo"/></div>
+			<div class="IndividualSkill">Microsoft Excel<br><br><img src="images/skills/excel.png" class="skillLogo"/></div>
+			<div class="IndividualSkill">Microsoft Powerpoint<br><img src="images/skills/powerpoint.png" class="skillLogo"/></div>
+			<div class="IndividualSkill">HTML<br><img src="images/skills/html.png" class="skillLogo"/></div>
+			<div class="IndividualSkill">CSS<br><img src="images/skills/css.png" class="skillLogo"/></div>			
+			<div class="IndividualSkill">Javascript<br><img src="images/skills/javascript.png" class="skillLogo"/></div>
+			<div class="IndividualSkill">PHP<br><img src="images/skills/php.png" class="skillLogo"/></div>
+			<div class="IndividualSkill">Java<br><img src="images/skills/java.png" class="skillLogo"/></div>
+			<div class="IndividualSkill">C++<br><img src="images/skills/c++.png" class="skillLogo"/></div>
+			<div class="IndividualSkill">Canon 80D<br><img src="images/skills/80d.png" class="skillLogo"/></div>
+			</div>
+			
+
+		
+		</ul>
+		</div>
+		
+		</div>
+</div>		
 	</body>
 </html>

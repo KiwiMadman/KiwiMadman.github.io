@@ -211,3 +211,162 @@ h5{font-family:Ubuntu;}
 	width:10%;
 	height:200px;
 }
+
+
+
+#mobileVersion{
+	display:none;
+	
+}
+
+
+/** Mobile CSS*/
+body {
+	
+	background-color:#FFF;
+	font-family:Arial;
+}
+
+h1{font-family:Ubuntu;}
+h2{font-family:Ubuntu;}
+h3{font-family:Ubuntu;}
+h4{font-family:Ubuntu;}
+h5{font-family:Ubuntu;}
+
+/*Side Bar Content Sections*/
+#sideBar{
+	background-color:rgb(0,167,217);
+	padding:10px;
+	margin-left:10px;
+	text-align:center;
+	color:white;
+
+}
+#sideBar h1{
+	text-decoration:underline;
+	font-family:'Ubuntu';
+}
+
+
+#socialMedia{
+	border-top:5px solid White;
+	padding-top:20px;
+	padding-bottom:20px;
+	margin-top:20px;
+	margin-bottom:20px;
+	text-align:center;
+	font-size:19px;
+}
+
+#socialMedia img{
+	width:5%	
+}
+#references{
+	border-top:5px solid White;
+	border-bottom:5px solid White;
+	padding-bottom:10px;
+	margin-bottom:25px;
+}
+
+
+/*Main Content Sections */
+
+#mobileVersion>#mainContentMOB{
+	width:75%;
+	margin-left:auto;
+	margin-right:auto;
+	
+
+}
+
+#mobileVersion>#personalStatementMOB{
+	background-color:rgba(0,167,217,0.3);
+	padding-top:5px;
+	padding-right:25px;
+	padding-left:30px;
+	padding-bottom:10px;
+	margin-top:35px;
+	margin-bottom:35px;
+	box-shadow:5px 10px 50px #aaa;
+	
+}
+#mobileVersion>#workExperienceMOB{
+	background-color:rgba(0,167,217,0.3);
+	padding-top:5px;
+	padding-right:25px;
+	padding-left:30px;
+	padding-bottom:10px;
+	margin-bottom:35px;
+	box-shadow:5px 10px 50px #aaa;
+}
+#mobileVersion>#workExperienceMOB a{
+	color:black;
+	text-decoration:none;
+	
+}
+}
+#mobileVersion>.current{
+	color:#000;
+	background-color:#FFF;
+	padding:2px;
+	padding-right:4px;
+	border:1px solid rgb(0,167,217);
+	
+}
+#mobileVersion>#education{
+	background-color:rgba(0,167,217,0.3);
+	padding-top:5px;
+	padding-right:25px;
+	padding-left:30px;
+	padding-bottom:10px;
+	margin-bottom:35px;
+	box-shadow:5px 10px 50px #aaa;
+}
+#mobileVersion>#skills{
+	background-color:rgba(0,167,217,0.3);
+	padding-top:5px;
+	padding-right:25px;
+	padding-left:30px;
+	padding-bottom:10px;
+	margin-bottom:35px;
+	box-shadow:5px 10px 50px #aaaaaa;
+	height:1000px;
+}
+#mobileVersion>.skillLogo{
+	width:150px;
+	padding-bottom:30px;
+	padding-top:10px;
+}
+
+#mobileVersion>.IndividualSkill{
+	float:left;
+	text-align:center;
+	padding-left:15px;
+	padding-right:15px;
+	padding-bottom:30px;
+	width:20%;
+	height:200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
