@@ -4,25 +4,89 @@
 	<head>
 		<title>Hayden Alves CV Website</title>
 		<link rel="stylesheet" type="text/css" href="stylesheet/layout.css">
+		<link rel="stylesheet" type="text/css" href="stylesheet/lightbox.css">
 		<link rel="icon" href="images/logo.ico"/>
 		<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 		
-<script>if (screen.width<=699){
-			document.location.href("http://haydenalves.co.nz/mobile/mobile.html");
+<script>if (window.innerWidth<=800){
+			document.location("mobile/mobile.html")
 		}
-</script>
-		
+</script>	
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118933841-1"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
+
+
  window.dataLayer = window.dataLayer || [];
  function gtag(){dataLayer.push(arguments);}
  gtag('js', new Date());
  gtag('config', 'UA-118933841-1');
 </script>
+<script>
+function maxScreen(){
+			window.moveTo(0,0);
+			window.resizeTo(screen.width, screen.height);
+
+}
+// Open the Modal
+function openModal() {
+  if(window.innerWidth>=1400){
+	document.getElementById('myModal').style.display = "block";
+	}else{
+		if(confirm("Sorry broswer needs to be at least 1400px to open skill description.")){
+			maxScreen();
+		}else{
+		
+		}
+	}
+}
+
+// Close the Modal
+function closeModal() {
+		document.getElementById('myModal').style.display = "none";
+  }
+  
+  
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+  
+  
+ 
+  
+}
+</script>		
 		<meta name="description" content="A CV website for Hayden Alves a marketing and management student from the Victoria University of Wellington">
 		<meta charset="UTF-8">
 		<meta name="keywords" content="hayden alves,cv, marketing student, wellington, victoria university of wellington, ">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name ="author" content="Hayden Alves">
+		<meta name="viewport" content="width-device-width, inital-scale=1.0">
 	</head>
 
 	<body>
@@ -114,25 +178,218 @@
 			</p>
 		</div> 
 		
-		<div id="skills">
+		<div id="skills" >
 		<h3>Skills</h3>
-			<div class="IndividualSkill">Adobe Photoshop<br><img src="images/skills/photoshop.png" class="skillLogo"/></div>
-			<div class="IndividualSkill">Adobe Indesign<br><img src="images/skills/indesign.png" class="skillLogo"/></div>
-			<div class="IndividualSkill">Adobe Lightroom<br><img src="images/skills/lightroom.png" class="skillLogo"/></div>
-			<div class="IndividualSkill">Adobe Premiere<br><img src="images/skills/premiere.png" class="skillLogo"/></div>
-			<div class="IndividualSkill">Microsoft Word<br><img src="images/skills/word.png" class="skillLogo"/></div>
-			<div class="IndividualSkill">Microsoft Excel<br><img src="images/skills/excel.png" class="skillLogo"/></div>
-			<div class="IndividualSkill">Microsoft Powerpoint<br><img src="images/skills/powerpoint.png" class="skillLogo"/></div>
-			<div class="IndividualSkill">HTML<br><img src="images/skills/html.png" class="skillLogo"/></div>
-			<div class="IndividualSkill">CSS<br><img src="images/skills/css.png" class="skillLogo"/></div>			
-			<div class="IndividualSkill">Javascript<br><img src="images/skills/javascript.png" class="skillLogo"/></div>
-			<div class="IndividualSkill">PHP<br><img src="images/skills/php.png" class="skillLogo"/></div>
-			<div class="IndividualSkill">Java<br><img src="images/skills/java.png" class="skillLogo"/></div>
-			<div class="IndividualSkill">C++<br><img src="images/skills/c++.png" class="skillLogo"/></div>
-			<div class="IndividualSkill">Canon 80D<br><img src="images/skills/80d.png" class="skillLogo"/></div>
+			<div class="IndividualSkill">Adobe Photoshop<br><img src="images/skills/photoshop.png" class="skillLogo" onclick="openModal();currentSlide(1)" class="hover-shadow"/></div>
+			<div class="IndividualSkill">Adobe Indesign<br><img src="images/skills/indesign.png" class="skillLogo" onclick="openModal();currentSlide(2)" class="hover-shadow"/></div>
+			<div class="IndividualSkill">Adobe Lightroom<br><img src="images/skills/lightroom.png" class="skillLogo" onclick="openModal();currentSlide(3)" class="hover-shadow"/></div>
+			<div class="IndividualSkill">Adobe Premiere<br><img src="images/skills/premiere.png" class="skillLogo" onclick="openModal();currentSlide(4)" class="hover-shadow"/></div>
+			<div class="IndividualSkill">Microsoft Word<br><img src="images/skills/word.png" class="skillLogo" onclick="openModal();currentSlide(5)" class="hover-shadow"/></div>
+			<div class="IndividualSkill">Microsoft Excel<br><img src="images/skills/excel.png" class="skillLogo" onclick="openModal();currentSlide(6)" class="hover-shadow"/></div>
+			<div class="IndividualSkill">Microsoft Powerpoint<br><img src="images/skills/powerpoint.png" class="skillLogo" onclick="openModal();currentSlide(7)" class="hover-shadow"/></div>
+			<div class="IndividualSkill">HTML<br><img src="images/skills/html.png" class="skillLogo" onclick="openModal();currentSlide(8)" class="hover-shadow"/></div>
+			<div class="IndividualSkill">CSS<br><img src="images/skills/css.png" class="skillLogo" onclick="openModal();currentSlide(9)" class="hover-shadow"/></div>			
+			<div class="IndividualSkill">Javascript<br><img src="images/skills/javascript.png" class="skillLogo" onclick="openModal();currentSlide(10)" class="hover-shadow"/></div>
+			<div class="IndividualSkill">PHP<br><img src="images/skills/php.png" class="skillLogo" onclick="openModal();currentSlide(11)" class="hover-shadow"/></div>
+			<div class="IndividualSkill">Java<br><img src="images/skills/java.png" class="skillLogo" onclick="openModal();currentSlide(12)" class="hover-shadow"/></div>
+			<div class="IndividualSkill">C++<br><img src="images/skills/c++.png" class="skillLogo" onclick="openModal();currentSlide(13)" class="hover-shadow"/></div>
+			<div class="IndividualSkill">Canon 80D<br><img src="images/skills/80d.png" class="skillLogo" onclick="openModal();currentSlide(14)" class="hover-shadow"/></div>
 
 		</div>
 		
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal" onload="keyPressNextPrev()">
+  
+  <div class="modal-content" >
+<span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="mySlides">
+      <div class="numbertext">1 / 14</div>
+	  <div class="lightBoxText">
+	  <h3 class="lightBoxTitle">Adobe Photoshop</h3>
+	  <ul class="lightBoxContent">
+		<li>Started learning at age 14 in highschool design course</li>
+		<li>Used to edit photos, and other images for websites and other media projects</li>
+		<li>Used in University assignments to help design piece of advertising media (MARK201) </li>
+		<li>Used to help size and prepare images for Angela Goodall Dance Academy website</li>
+	  </ul>
+	  </div>
+      <img src="images/skills/photoshop.png" style="width:60%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 14</div>
+	  <div class="lightBoxText">
+	  <h3 class="lightBoxTitle">Adobe Indesign</h3>
+	 <ul class="lightBoxContent">
+		<li>Started learning at 17 in high school design course</li>
+		<li>Used for assignments in year 13, some examples include, creating a booklet advertising an international student department</li>
+		<li>Used for designing various CV designs</li>
+		<li>Used for designing and infographic for assignment in 2nd year marketing (MARK201)</li>
+	  </ul>
+	  </div>
+      <img src="images/skills/indesign.png" style="width:60%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 14</div>
+	  <div class="lightBoxText">
+	  <h3 class="lightBoxTitle">Adobe Lightroom</h3>
+	  <ul class="lightBoxContent">
+		<li>Started self teaching after buying Canon 80D</li>
+		<li>Only used to edit a couple of photos</li>
+		<li>Still require guidance or extra research if doing anything complicated</li>
+	  </ul></div>
+      <img src="images/skills/lightroom.png" style="width:60%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 14</div>
+	  <div class="lightBoxText">
+	  <h3 class="lightBoxTitle">Adobe Premiere</h3>
+	  <ul class="lightBoxContent">
+		<li>Self taught very basic understanding</li>
+		<li>Used to edit a couple of videos including a video presentation for 2nd year marketing (Mark201) </li>
+		<li>Have used to make timelapses and pieceing multiple clips together</li>
+	  </ul>
+	  </div>
+      <img src="images/skills/premiere.png" style="width:60%">
+    </div>
+	<div class="mySlides">
+      <div class="numbertext">5 / 14</div>
+	  <div class="lightBoxText">
+	  <h3 class="lightBoxTitle">Microsoft Word</h3>
+	  <ul class="lightBoxContent">
+		<li>Have been using since primary school </li>
+		<li>Use for almost every assignment I've ever done</li>
+		<li>Good knowledge of most of the tools and functions</li>
+	  </ul>
+	  </div>
+      <img src="images/skills/word.png" style="width:60%">
+    </div>
+	<div class="mySlides">
+      <div class="numbertext">6 / 14</div>
+	  <div class="lightBoxText">
+	  <h3 class="lightBoxTitle">Microsoft Excel</h3>
+	  <ul class="lightBoxContent">
+		<li>Have a basic understanding of what functions Excel provides</li>
+		<li>Know how to use a number of these functions</li>
+		<li>Understanding of the formulas and functions to modify numbers (such as SUM, AVERAGE, MIN, MAX)</li>
+		<li>Have used Excel to build databses, budgets and generate statistics </li>
+		<li>Lack understanding when building pivot tables and coding macros</li>
+	  </ul>
+	  </div>
+      <img src="images/skills/excel.png" style="width:60%">
+    </div>
+	<div class="mySlides">
+      <div class="numbertext">7 / 14</div>
+	  <div class="lightBoxText">
+	  <h3 class="lightBoxTitle">Microsoft Powerpoint</h3>
+	  <ul class="lightBoxContent">
+		<li>Have been using powerpoint since primary school</li>
+		<li>Good understanding of functions available</li>
+		<li>Have used for many presentations in most of my university courses</li>
+	  </ul>
+	  </div>
+      <img src="images/skills/powerpoint.png" style="width:60%">
+    </div>
+	<div class="mySlides">
+      <div class="numbertext">8 / 14</div>
+	  <div class="lightBoxText">
+	  <h3 class="lightBoxTitle">HTML</h3>
+	 <ul class="lightBoxContent">
+		<li>Started learning at 15 years old</li>
+		<li>Made lots of websites for highschool assignments</li>
+		<li>Used to code Angela Goodall Dance Acamdemy website</li>
+		<li>Used to code this CV website</li>
+		<li>Am missing knowledge on some of the newer models (specifically ones that incorporate javascript into them)</li>
+	  </ul>
+	  </div>
+      <img src="images/skills/html.png" style="width:60%">
+    </div>
+	<div class="mySlides">
+      <div class="numbertext">9 / 14</div>
+	  <div class="lightBoxText">
+	  <h3 class="lightBoxTitle">CSS</h3>
+	  <ul class="lightBoxContent">
+		<li>Started learning at 15 years old while learning HTML</li>
+		<li>Used lots while making websites for highschool assignments</li>
+		<li>Used in making Angela Goodall Dance Acamdey website</li>
+		<li>Used in making this CV website </li>
+	  </ul>
+	  </div>
+      <img src="images/skills/css.png" style="width:60%">
+    </div>
+	<div class="mySlides">
+      <div class="numbertext">10 / 14</div>
+	  <div class="lightBoxText">
+	  <h3 class="lightBoxTitle">Javascript</h3>
+	  <ul class="lightBoxContent">
+		<li>Started learning a little bit at 16, but mostly self taught after highschool</li>
+		<li>Used javascript for little pieces of codes in highschool assignments (usually just as a back button)</li>
+		<li>Used to help intergrate other advanced models into html (such as lightboxes and other aesthetic models)</li>
+		<li>Still need guidance/research with most pieces of code, despite understanding most of it I find it difficult to code working code. </li>
+	  </ul>
+	  </div>
+      <img src="images/skills/javascript.png" style="width:60%">
+    </div>
+	<div class="mySlides">
+      <div class="numbertext">11 / 14</div>
+	  <div class="lightBoxText">
+	  <h3 class="lightBoxTitle">PHP</h3>
+	  <ul class="lightBoxContent">
+		<li>Started learning at 16</li>
+		<li>Used for highschool assignments, that involve intergrating into html website so that the websites could read data from a database</li>
+		<li>Learnt an older version of php so a lot of information I know is a bit out of date and as such need guidance/research to get the right code </li>
+		<li>Used a little bit on the timetable for Angela Goodall Dance Academy website (however will not work on demonstration site due to a hosting issue)</li>
+	  </ul>
+	  </div>
+      <img src="images/skills/php.png" style="width:60%">
+    </div>
+	<div class="mySlides">
+      <div class="numbertext">12 / 14</div>
+	  <div class="lightBoxText">
+	  <h3 class="lightBoxTitle">Java</h3>
+	  <ul class="lightBoxContent">
+		<li>Started learning in first year university (age 18)</li>
+		<li>Understood a lot of the basic concepts and can make very simple and programs</li>
+		<li>Unable to make anything more than a basic program, and therefore nothing that would be useful</li>
+	  </ul>
+	  </div>
+      <img src="images/skills/java.png" style="width:60%">
+    </div>
+	<div class="mySlides">
+      <div class="numbertext">13 / 14</div>
+	  <div class="lightBoxText">
+	  <h3 class="lightBoxTitle">C++</h3>
+	  <ul class="lightBoxContent">
+		<li>Started self teaching </li>
+		<li>Have very little knowledge and still require a lot of learning and research to be able to make anything</li>
+		<li>Would like to develop this skill more such that I could code onto android devices</li>
+	  </ul>
+	  </div>
+      <img src="images/skills/c++.png" style="width:60%">
+    </div>
+	<div class="mySlides">
+      <div class="numbertext">14 / 14</div>
+	  <div class="lightBoxText">
+	  <h3 class="lightBoxTitle">Canon 80D</h3>
+	  <ul class="lightBoxContent">
+		<li>Bought my own Canon 1100d and was able to take photos more easily and as such started learning what different features did</li>
+		<li>Started getting an understanding of how to change and monitor the ISO, shutter speed, exposure and appeture in order to get the best photos I could</li>
+		<li>Then bought a Canon80d and continued to use and learn how to use the camera</li>
+		<li>Lack of experience with models or studio lighting, as a lot of my photos have been outside or landscape pictures</li>
+	  </ul>
+	  </div>
+      <img src="images/skills/80d.png" style="width:60%">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+ 
+
+  </div>
+</div>
 		</div>
 </div>
 	
