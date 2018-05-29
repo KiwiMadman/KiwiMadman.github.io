@@ -8,8 +8,8 @@
 		<link rel="icon" href="images/logo.ico"/>
 		<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 		
-<script>if (screen.width=<800){
-			document.location.replace("http://www.haydenalves.co.nz/mobile/mobile.html");
+<script>if (window.innerWidth<=800){
+			document.location("mobile/mobile.html")
 		}
 </script>	
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118933841-1"></script>
@@ -23,21 +23,13 @@
  gtag('config', 'UA-118933841-1');
 </script>
 <script>
-function maxScreen(){
-			window.moveTo(0,0);
-			window.resizeTo(screen.width, screen.height);
 
-}
 // Open the Modal
 function openModal() {
   if(window.innerWidth>=1400){
 	document.getElementById('myModal').style.display = "block";
 	}else{
-		if(confirm("Sorry broswer needs to be at least 1400px to open skill description.")){
-			maxScreen();
-		}else{
 		
-		}
 	}
 }
 
@@ -48,15 +40,15 @@ function closeModal() {
   
   
 
-var slideIndex = 1;
-showSlides(slideIndex);
+
 
 // Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+
+  showSlides(slideIndex = n)
 }
 
 
@@ -65,6 +57,7 @@ function showSlides(n) {
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("demo");
   var captionText = document.getElementById("caption");
+
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
@@ -79,7 +72,7 @@ function showSlides(n) {
   
   
  
-  
+ 
 }
 </script>		
 		<meta name="description" content="A CV website for Hayden Alves a marketing and management student from the Victoria University of Wellington">
