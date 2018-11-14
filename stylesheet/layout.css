@@ -1,5 +1,4 @@
 body{
-	
 	background-color:#FFF;
 	font-family:Arial;
 }
@@ -26,15 +25,15 @@ h5{font-family:Ubuntu;}
 	font-size:1vw;
 	padding-bottom:20px;
 }
+
 #sideBar h1{
 	text-decoration:underline;
 	font-family:'Ubuntu';
 }
+
 .link{
 	text-decoration:none;
-	color:white;
-	
-	
+	color:white;	
 }
 
 .displayPic{
@@ -55,6 +54,14 @@ h5{font-family:Ubuntu;}
 #socialMedia img{
 	width:15%;	
 }
+
+#socialMediaSect a{
+	text-align:left;	
+	vertical-align:baseline;
+	
+	
+}
+
 #references{
 	border-top:5px solid White;
 	border-bottom:5px solid White;
@@ -68,8 +75,6 @@ h5{font-family:Ubuntu;}
 #mainContent{
 	width:75%;
 	margin-left:25%;
-	
-
 }
 
 #personalStatement{
@@ -91,13 +96,13 @@ h5{font-family:Ubuntu;}
 	margin-bottom:35px;
 	box-shadow:5px 10px 50px #aaa;
 }
-#workExperience a{
+#AGDALink{
 	color:black;
 	text-decoration:none;
 	
 }
 .organisationWE{
-	margin-bottom:-20px;
+	margin-bottom:0px;
 }
 .organisationEdu{
 	margin-bottom:2px;
@@ -111,6 +116,8 @@ h5{font-family:Ubuntu;}
 	padding:2px;
 	padding-right:4px;
 	border:1px solid rgb(0,167,217);
+	border-radius:10px;
+	
 	
 }
 #education{
@@ -131,10 +138,8 @@ h5{font-family:Ubuntu;}
 	margin-bottom:35px;
 	box-shadow:5px 10px 50px #aaaaaa;
 	padding-left:auto;
-	height:500px;
-
+	height:50vh;
 }
-
 
 #transitionPage{
 	width:300px;
@@ -207,18 +212,46 @@ h5{font-family:Ubuntu;}
 }
 
 
+#skillImageLB{
+	width:96%;
+	
+}
+#skillImageLBBox{
+	width:60%;
+	height:60%;
+}
 
 
+#AGDAoption{
+ text-decoration:none;
+ border-radius: 25px;
+  color:black;
+  background-color:white;
+  border: 1 rgb(0,167,217) solid; 
+  padding:2%;
+  font-family:Ubuntu;
+  height:auto;
+  box-shadow:5px 5px 5px #aaa;
+}
+
+#AGDADropDown{
+	margin-top:5px;
+	width:35%;
+	text-align:center;
+	
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
+#mediaDisplay{
+	margin-top:-38%;
+	float:left;
+	background-color:rgb(0,167,217);
+	height:1000px;
+	padding:10px;
+	margin-left:10px;
+	color:white;
+	width:20%;
+	font-size:25px;
+	font-size:1vw;
+	padding-bottom:20px;
+}

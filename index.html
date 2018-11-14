@@ -14,13 +14,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	
 	
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-2786208183779338",
-    enable_page_level_ads: true
-  });
-</script>
 		
 <script> 
  window.dataLayer = window.dataLayer || [];
@@ -30,6 +23,13 @@
 </script>
 		
 <script>
+//KeyPress
+$(document).keyup(function(e) {
+  if (e.keyCode === 27) { closeModal();}   // esc
+  if (e.keyCode === 37) {plusSlides(-1);} //right
+    if (e.keyCode ===39 ) {plusSlides(1);} //left
+
+});
 
 // Open the Modal
 function openModal() {
@@ -44,11 +44,7 @@ function openModal() {
 function closeModal() {
 		document.getElementById('myModal').style.display = "none";
   }
-  
-  
-
-
-
+ 
 // Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
@@ -81,6 +77,18 @@ function showSlides(n) {
  
  
 }
+</script>
+
+
+<script>
+function showAGDA(){
+	document.getElementById('AGDADropDown').style.display = "block";
+}
+function hideAGDA(){
+	document.getElementById('AGDADropDown').style.display = "none";
+}
+
+
 </script>		
 		<meta name="description" content="A CV website for Hayden Alves a marketing and management student from the Victoria University of Wellington">
 		<meta charset="UTF-8">
@@ -98,9 +106,9 @@ function showSlides(n) {
 		<h2><a href="mailto:Hayden.Alves@gmail.com" class="link">Hayden.Alves@gmail.com</a></h2>
 		
 		<div id="socialMedia">
-			<a href="http://www.facebook.com/HaydenAlves" class="link"  title="Facebook Profile "><img src="images/FACEBOOK.png"  alt="Facebook logo and Profile Link"/> /HaydenAlves</a><br/>
-			<a href="http://www.instagram.com/ThisIsWhatIDidThisSummer" class="link" title="Instagram Profile"><img src="images/INSTAGRAM.png" alt="Instagram Logo and Profile Link" /> /ThisIsWhatIDidThisSummer</a><br/>
-			<a href="http://www.linkedin.com/in/HaydenAlves" class="link" title="LinkedIn Profile"><img src="images/LINKEDIN.png" alt="Linkedin Logo and Profile Link" /> /HaydenAlves</a><br/>
+			<div id="socialMediaSect"><a href="http://www.facebook.com/HaydenAlves" class="link"  title="Facebook Profile "><img src="images/FACEBOOK.png"  alt="Facebook logo and Profile Link"/> /HaydenAlves</a></div><br/>
+			<div id="socialMediaSect"><a href="http://www.instagram.com/ThisIsWhatIDidThisSummer" class="link" title="Instagram Profile"><img src="images/INSTAGRAM.png" alt="Instagram Logo and Profile Link" /> /ThisIsWhatIDidThisSummer</a></div><br/>
+			<div id="socialMediaSect"><a href="http://www.linkedin.com/in/HaydenAlves" class="link" title="LinkedIn Profile"><img src="images/LINKEDIN.png" alt="Linkedin Logo and Profile Link" /> /HaydenAlves</a></div><br/>
 		</div>
 		
 		<div id="references">
@@ -109,31 +117,39 @@ function showSlides(n) {
 		Manager<br>
 		Whitcoulls Johnsonville<br>
 		<a href="tel:048904210" class="link">04 890 4210</a><br>
-		<a href="mailto:JON@whitcoulls.co.nz" class="link">JON@whitcoulls.co.nz</a></p><br><br>
-			<p><strong>Paul Atkins</strong><br>
-				Senior PM<br>
-				Red Cross<br>
-				<a href='tel:0272693009' class='link'>027 269 3009</a></p>
+		<a href="mailto:JON@whitcoulls.co.nz" class="link">JON@whitcoulls.co.nz</a></p>
+		<p><strong>Paul Atkins</strong><br>
+		Senior PM<br>
+		Red Cross<br>
+		<a href='tel:0272693009' class='link'>027 269 3009</a></p>
 			
 		</div>
 		
 		<a href="files/HaydenAlvesCV.pdf" class="link" alt="a download link to a pdf of CV" title="CV Download"> CV Download</a>
 		</div>
+		
+		
+	
 		<div id="mainContent">
 		<div id="personalStatement">
 			<h3>Personal Statement</h3>
-			<p> A marketing and management student at Victoria University of Wellington. Seeking a part
-				time position to help develop skills needed for entering into a successful marketing career.
-				Through my experience working in a retail environment I have obtained techniques that
-				help me be a hard working, conscientious worker and I wish to apply these techniques to a
-				new field. 
+			<p> A recent marketing and management graduate from Victoria University of Wellington. I am a person with a real passion to work and learn and look forward to 
+			applying my marketing and management theory to an actual business to help them grow. I will be seeking full time employment in a marketing or marketing related field starting early march and 
+			look forward to learning from and getting to know many new people. 
+		
 			</p>
 		</div>
 		
 		<div id="workExperience">
 		<h3>Work Experience</h3>
 			<div>
-				<h4 class=organisationWE'>Prefer & Zwer - Marketing assistant <span class='date'>(2018- <span class='current'>Current</span>)</span></h4> 	
+				<h4 class='organisationWE'>Tekron- Marketing Assistant Intern <span class='date'>(November 2018- <span class="current">Current </span>)</span></h4> 	
+				<p>
+			     </p>	
+			</div>
+		
+			<div>
+				<h4 class='organisationWE'>Prefer & Zwerm - Marketing assistant <span class='date'>(August 2018- November 2018)</span></h4> 	
 				<p>As a marketing assistant at Prefer and Zwerm I have been creating and planning social media content for them in order to help enhance their brand image
 			     		so that they can acquire new customers and provide them with as much value as possible. I have also have done a number
 				    	of competitor analysis for them looking at what product offerings competitiors are offering and seeing whether they are a substantial threat to the business
@@ -157,7 +173,11 @@ function showSlides(n) {
 			</div>
 			
 			<div>
-				<h4 class="organisationWE"><span id="AGDALink"><a href="angelaGoodallDanceAcademy/angelaGoodallTransitionPage.html">Angela Goodall Dance Academy - Media Design <span class="date">(2015)</span> </a></span></h4>
+				<div onMouseover="showAGDA()" onMouseOut="hideAGDA()"><h4 class="organisationWE"><a href="#" style="color:black;
+	text-decoration:none;">Angela Goodall Dance Academy - Media Design <span class="date">(2015) </a></span></h4>
+				<div id="AGDADropDown" style="display:none;margin-bottom:2%;"><br>
+				<a id="AGDAoption" href="angelaGoodallDanceAcademy/danceAcademyMedia.html">Display Advertising</a><br><br>
+				<a id="AGDAoption" href="angelaGoodallDanceAcademy/Website/index.html">Website</a></div></div>
 				<p> In order to help Angela Goodall relaunch her dance academy I was asked to design a
 					series of promotional pieces to be distributed. To do this an HTML website was made
 					to provide customers basic information (including timetable, street address and contact
@@ -201,8 +221,8 @@ function showSlides(n) {
 			<div class="IndividualSkill">Adobe Indesign<br><img src="images/skills/indesign.png" class="skillLogo" onclick="openModal();currentSlide(2)" class="hover-shadow"/></div>
 			<div class="IndividualSkill">Adobe Lightroom<br><img src="images/skills/lightroom.png" class="skillLogo" onclick="openModal();currentSlide(3)" class="hover-shadow"/></div>
 			<div class="IndividualSkill">Adobe Premiere<br><img src="images/skills/premiere.png" class="skillLogo" onclick="openModal();currentSlide(4)" class="hover-shadow"/></div>
-			<div class="IndividualSkill">Microsoft Word<br><img src="images/skills/word.png" class="skillLogo" onclick="openModal();currentSlide(5)" class="hover-shadow"/></div>
-			<div class="IndividualSkill">Microsoft Excel<br><img src="images/skills/excel.png" class="skillLogo" onclick="openModal();currentSlide(6)" class="hover-shadow"/></div>
+			<div class="IndividualSkill">Microsoft Word<br><br><img src="images/skills/word.png" class="skillLogo" onclick="openModal();currentSlide(5)" class="hover-shadow"/></div>
+			<div class="IndividualSkill">Microsoft Excel<br><br><img src="images/skills/excel.png" class="skillLogo" onclick="openModal();currentSlide(6)" class="hover-shadow"/></div>
 			<div class="IndividualSkill">Microsoft Powerpoint<br><img src="images/skills/powerpoint.png" class="skillLogo" onclick="openModal();currentSlide(7)" class="hover-shadow"/></div>
 			<div class="IndividualSkill">HTML<br><br><img src="images/skills/html.png" class="skillLogo" onclick="openModal();currentSlide(8)" class="hover-shadow"/></div>
 			<div class="IndividualSkill">CSS<br><br><img src="images/skills/css.png" class="skillLogo" onclick="openModal();currentSlide(9)" class="hover-shadow"/></div>			
@@ -230,7 +250,7 @@ function showSlides(n) {
 		<li>Used to help size and prepare images for Angela Goodall Dance Academy website</li>
 	  </ul>
 	  </div>
-      <img src="images/skills/photoshop.png" style="width:60%">
+      <div id="skillImageLBBox"><img id="skillImageLB" src="images/skills/photoshop.png"></div>
     </div>
 
     <div class="mySlides">
@@ -244,7 +264,7 @@ function showSlides(n) {
 		<li>Used for designing and infographic for assignment in 2nd year marketing (MARK201)</li>
 	  </ul>
 	  </div>
-      <img src="images/skills/indesign.png" style="width:60%">
+        <div id="skillImageLBBox"><img id="skillImageLB" src="images/skills/indesign.png" ></div>
     </div>
 
     <div class="mySlides">
@@ -256,7 +276,7 @@ function showSlides(n) {
 		<li>Only used to edit a couple of photos</li>
 		<li>Still require guidance or extra research if doing anything complicated</li>
 	  </ul></div>
-      <img src="images/skills/lightroom.png" style="width:60%">
+        <div id="skillImageLBBox"><img id="skillImageLB" src="images/skills/lightroom.png" ></div>
     </div>
 
     <div class="mySlides">
@@ -269,7 +289,7 @@ function showSlides(n) {
 		<li>Have used to make timelapses and pieceing multiple clips together</li>
 	  </ul>
 	  </div>
-      <img src="images/skills/premiere.png" style="width:60%">
+        <div id="skillImageLBBox"><img id="skillImageLB" src="images/skills/premiere.png"></div>
     </div>
 	<div class="mySlides">
       <div class="numbertext">5 / 14</div>
@@ -281,7 +301,7 @@ function showSlides(n) {
 		<li>Good knowledge of most of the tools and functions</li>
 	  </ul>
 	  </div>
-      <img src="images/skills/word.png" style="width:60%">
+        <div id="skillImageLBBox"><img id="skillImageLB" src="images/skills/word.png" ></div>
     </div>
 	<div class="mySlides">
       <div class="numbertext">6 / 14</div>
@@ -295,7 +315,7 @@ function showSlides(n) {
 		<li>Lack understanding when building pivot tables and coding macros</li>
 	  </ul>
 	  </div>
-      <img src="images/skills/excel.png" style="width:60%">
+        <div id="skillImageLBBox"><img id="skillImageLB" src="images/skills/excel.png" ></div>
     </div>
 	<div class="mySlides">
       <div class="numbertext">7 / 14</div>
@@ -307,7 +327,7 @@ function showSlides(n) {
 		<li>Have used for many presentations in most of my university courses</li>
 	  </ul>
 	  </div>
-      <img src="images/skills/powerpoint.png" style="width:60%">
+        <div id="skillImageLBBox"><img id="skillImageLB" src="images/skills/powerpoint.png"></div>
     </div>
 	<div class="mySlides">
       <div class="numbertext">8 / 14</div>
@@ -321,7 +341,7 @@ function showSlides(n) {
 		<li>Am missing knowledge on some of the newer models (specifically ones that incorporate javascript into them)</li>
 	  </ul>
 	  </div>
-      <img src="images/skills/html.png" style="width:60%">
+        <div id="skillImageLBBox"><img id="skillImageLB" src="images/skills/html.png"></div>
     </div>
 	<div class="mySlides">
       <div class="numbertext">9 / 14</div>
@@ -334,7 +354,7 @@ function showSlides(n) {
 		<li>Used in making this CV website </li>
 	  </ul>
 	  </div>
-      <img src="images/skills/css.png" style="width:60%">
+       <div id="skillImageLBBox"> <img id="skillImageLB" src="images/skills/css.png"></div>
     </div>
 	<div class="mySlides">
       <div class="numbertext">10 / 14</div>
@@ -347,7 +367,7 @@ function showSlides(n) {
 		<li>Still need guidance/research with most pieces of code, despite understanding most of it I find it difficult to code working code. </li>
 	  </ul>
 	  </div>
-      <img src="images/skills/javascript.png" style="width:60%">
+       <div id="skillImageLBBox"> <img id="skillImageLB" src="images/skills/javascript.png"></div>
     </div>
 	<div class="mySlides">
       <div class="numbertext">11 / 14</div>
@@ -360,7 +380,7 @@ function showSlides(n) {
 		<li>Used a little bit on the timetable for Angela Goodall Dance Academy website (however will not work on demonstration site due to a hosting issue)</li>
 	  </ul>
 	  </div>
-      <img src="images/skills/php.png" style="width:60%">
+      <div id="skillImageLBBox">  <img id="skillImageLB" src="images/skills/php.png"></div>
     </div>
 	<div class="mySlides">
       <div class="numbertext">12 / 14</div>
@@ -372,7 +392,7 @@ function showSlides(n) {
 		<li>Unable to make anything more than a basic program, and therefore nothing that would be useful</li>
 	  </ul>
 	  </div>
-      <img src="images/skills/java.png" style="width:60%">
+       <div id="skillImageLBBox"> <img id="skillImageLB" src="images/skills/java.png"></div>
     </div>
 	<div class="mySlides">
       <div class="numbertext">13 / 14</div>
@@ -384,7 +404,7 @@ function showSlides(n) {
 		<li>Would like to develop this skill more such that I could code onto android devices</li>
 	  </ul>
 	  </div>
-      <img src="images/skills/c++.png" style="width:60%">
+      <div id="skillImageLBBox">  <img id="skillImageLB" src="images/skills/c++.png"></div>
     </div>
 	<div class="mySlides">
       <div class="numbertext">14 / 14</div>
@@ -397,7 +417,7 @@ function showSlides(n) {
 		<li>Lack of experience with models or studio lighting, as a lot of my photos have been outside or landscape pictures</li>
 	  </ul>
 	  </div>
-      <img src="images/skills/80d.png" style="width:60%">
+      <div id="skillImageLBBox">  <img id="skillImageLB" src="images/skills/80d.png"></div>
     </div>
 
     <!-- Next/previous controls -->
@@ -407,6 +427,8 @@ function showSlides(n) {
 
   </div>
 </div>
+		</div>
+		
 		</div>
 </div>
 
@@ -530,6 +552,8 @@ function showSlides(n) {
 			</p>
 		</div> 
 		
+			
+		
 		<div id="skills">
 		<h3>Skills</h3>
 		<ul>
@@ -548,15 +572,12 @@ function showSlides(n) {
 			<div class="IndividualSkill">Java<br><br><img src="images/skills/java.png" class="skillLogo"/></div>
 			<div class="IndividualSkill">C++<br><br><img src="images/skills/c++.png" class="skillLogo"/></div>
 			<div class="IndividualSkill">Canon 80D<br><img src="images/skills/80d.png" class="skillLogo"/></div>
-			</div>
-			
-
-		
+			</div>		
 		</ul>
 		</div>
-		
 	</div>
-
+		
+		
 </div>
 		<script>if ((window.innerWidth<=800 || screen.width<=800) && document.getElementById('mobileVer').style.display == "none"){
 					document.getElementById('desktopVer').style.display = "none";
