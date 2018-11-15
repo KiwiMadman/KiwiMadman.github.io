@@ -1,13 +1,61 @@
 <!Doctype Html>
 <html>
-<head></head>
+<head>
+<link rel="stylesheet" type="text/css" href="calendar.css">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+<title>The Crew's Calendar </title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
 
-<body>
 
 
+function pwtest(){
+var password = prompt("What is the password?", 'Hint: Where we used to hang out during lunch at onslow');
+if (password == 'Room 19'){
+	alert('Correct');
+	document.getElementById('bodySect').style.display = "block";	
+	
+} else {
+alert('This is incorrect');
+document.getElementById('bodySect').style.display = "none";
+}
 
-<iframe src="https://calendar.google.com/calendar/b/1/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=7vmb32jvfajbtl9hrgn0hsahcg%40group.calendar.google.com&amp;color=%23333333&amp;ctz=Pacific%2FAuckland" style="border:solid 1px #777" width="100%" height="750px" frameborder="0" scrolling="no"></iframe>
+}
+</script>
 
-<a href="https://calendar.google.com/calendar/b/1/exporticalzip?cexp=N3ZtYjMyanZmYWpidGw5aHJnbjBoc2FoY2dAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ">Export Calendar </a>
+</head>
+
+<body onload="javascript:pwtest();">
+<div id="bodySect">
+
+
+<iframe src="https://calendar.google.com/calendar/b/1/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=7vmb32jvfajbtl9hrgn0hsahcg%40group.calendar.google.com&amp;color=%23333333&amp;ctz=Pacific%2FAuckland" style="" width="100%" height="750px" frameborder="0" scrolling="no"></iframe>
+<div id="export">
+<a href="https://calendar.google.com/calendar/b/1/exporticalzip?cexp=N3ZtYjMyanZmYWpidGw5aHJnbjBoc2FoY2dAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"  
+style="border:none; text-size:25px; background-color:white;box-shadow:5px 5px 5px #aaa;">Export Calendar </a>
+</div>
+
+<div id="calendar">
+<h1>Add an Event</h1>
+<form action="https://hooks.zapier.com/hooks/catch/3976222/exoves/" method="post">
+Title <input  class="boxes" name="Title" type="text" required /><br>
+Start Date <input class="boxes" name ="StartDate"type="datetime-local" required /><br>
+End Date <input class="boxes" name="EndDate" type="datetime-local" required /><br>
+Repeat <select class="boxes" name="Repeat">
+<option>Does not repeat</option>
+<option>Daily</option>
+<option>Weekly</option>
+<option>Monthly</option>
+<option>Yearly</option>
+<option>Every week day</option>
+</select><br>
+All Day <input class="boxes" name="AllDay" type="checkbox" style="background-color:white;"/><br>
+Location <input class="boxes" name="location" type="text"/><br>
+Description <br><textarea name="description" width="450px" height="140px"> </textarea> <br>
+<input type="Submit" style="border:none; text-size:25px; background-color:white;box-shadow:5px 5px 5px #aaa;" value="Add to calendar"/>
+
+</form>
+</div>
+</div>
 </body>
 </html>
